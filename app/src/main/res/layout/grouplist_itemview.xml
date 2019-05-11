@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_itemview"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/gl_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/gl_item_gpimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/frame_bg_color_photo"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/gl_item_gpimage_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textTitleColor"
+                android:textSize="33dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_round_shape" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gl_item_gpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:text="Soft Skill "
+                    android:textColor="@color/itemview_TextViewColor"
+                    android:textSize="@dimen/itemviewTitleFnSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gl_item_gpId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gl_item_gpSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="This is my Group"
+                android:textColor="@color/itemview_SubTextViewColor"
+                android:textSize="@dimen/itemviewSubTitleFnSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

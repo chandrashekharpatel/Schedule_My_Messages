@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    tools:context=".Fragment.HelpInstruction">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/helpIntro_imageShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="220dp"
+            android:src="@drawable/sc_help_intro_3" />
+
+        <ImageView
+            android:id="@+id/helpIntro_imageShowBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/vt_phone_body" />
+
+        <TextView
+            android:id="@+id/helpIntro_welcome"
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/bg_itemview_option"
+            android:gravity="center"
+            android:text="WELCOME"
+
+            android:textColor="@color/textTitleColor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/helpIntro_leftSide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/helpIntro_rightSide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/helpIntro_skipAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_button"
+                android:text="Skip All"
+                android:textColor="#FFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/helpIntro_previous"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_button"
+                android:text="Previous"
+                android:textColor="#FFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/helpIntro_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_button"
+                android:text="Next"
+                android:textColor="#FFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/helpIntro_slideCount"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_img_round"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#0F0"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

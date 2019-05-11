@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_theme"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.FullScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:background="@drawable/bg_button_notic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNMSmessageShow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Modifying"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/btnNSMDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_button"
+            android:gravity="center"
+            android:text="REMOVE"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/swiNMSstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tvNMSmessageShowStatus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_shadow_end"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNMSNumberLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:text="Number"
+                    android:textColor="@color/textColorSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etNMSnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edit_text"
+                        android:digits="0123456789,"
+                        android:hint="Number"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:textColor="@color/textColorEditText"
+                        android:textSize="@dimen/textFontSizeEditText" />
+
+                    <ImageView
+                        android:id="@+id/btnNMSaddNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_account_phone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNMSnameShow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/textFontSizeSmall" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Message"
+                    android:textColor="@color/textColorSmall"
+                    android:textSize="@dimen/textFontSizeSmall" />
+
+                <EditText
+                    android:id="@+id/etNMSmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="top"
+                    android:hint="Message"
+                    android:minLines="2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/textColorEditText"
+                    android:textSize="@dimen/textFontSizeEditText" />
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/adsBannerNewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6139134558279624/2774164933">
+            </com.google.android.gms.ads.AdView>
+            <LinearLayout
+                android:id="@+id/NMS_lay_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_option"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNMSdateMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Date"
+                        android:textColor="@color/textColorSmall"
+                        android:textSize="@dimen/textFontSizeSmall" />
+
+                    <TextView
+                        android:id="@+id/etNMSdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="date"
+                        android:textColor="@color/textColorEditText"
+                        android:textSize="@dimen/textFontSizeEditText" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnNSMDateSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_date_access" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NMS_lay_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_option"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNMStimeMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Time"
+                        android:textColor="@color/textColorSmall"
+                        android:textSize="@dimen/textFontSizeSmall" />
+
+                    <TextView
+                        android:id="@+id/etNMStime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:hint="Time"
+                        android:inputType="time"
+                        android:textColor="@color/textColorEditText"
+                        android:textSize="@dimen/textFontSizeEditText" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnNSMTimeSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_access_time" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNMSmessage_sendNow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/NMS_lay_SMS_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_option"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNMSsmsRepeating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="SMS Repeat"
+                    android:textColor="@color/textColorSmall"
+                    android:textSize="@dimen/textFontSizeSmall" />
+
+                <Spinner
+                    android:id="@+id/NMS_spi_SMSRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/NMS_lay_SIM_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_option"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Preferred sim for SMS"
+                    android:textColor="@color/textColorSmall"
+                    android:textSize="@dimen/textFontSizeSmall" />
+
+                <RadioGroup
+                    android:id="@+id/NMS_rg_SIM_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/NMS_rb_SIM_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <RadioButton
+                        android:id="@+id/NMS_rb_SIM_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <RadioButton
+                        android:id="@+id/NMS_rb_SIM_default"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NMS_lay_saveDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_button_onclick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnNSMdone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_button"
+                    android:gravity="center_horizontal"
+                    android:text="DONE"
+                    android:textColor="#FFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

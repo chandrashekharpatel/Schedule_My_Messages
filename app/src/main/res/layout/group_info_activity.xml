@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_theme"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".gp.GroupInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp">
+
+                <ImageView
+                    android:id="@+id/gInfo_imgPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/gInfo_imgText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/shadowColorEnd"
+                    android:textSize="33dp"
+                    android:textStyle="bold" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gInfo_GpName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Group Name"
+                        android:textColor="#fff"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gInfo_GpId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID"
+                        android:textColor="@color/textColorSmall"
+                        android:textSize="10dp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/gInfo_GpSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:text="This is the Group Sub Title"
+                    android:textColor="#d1d1d1"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gInfo_editGroupName"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_more_modify"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gInfo_rcvMamberList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/gInfo_addNewMemberInGP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_itemview_option"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Add Members"
+                        android:textColor="@color/itemview_optionColor"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_person" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/gInfo_deleteGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/bg_itemview_option"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:src="@drawable/ic_delete" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Delete Group"
+                android:textColor="#ff0000"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_addNewMemberInGP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_add_plus"
+        tools:ignore="VectorDrawableCompat" />
+</FrameLayout>

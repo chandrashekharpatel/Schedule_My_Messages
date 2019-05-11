@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mess_alert"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMA_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:background="@drawable/bg_shadow"
+        android:gravity="center"
+        android:text="Header"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgMA_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/tvMA_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Are you sure?"
+            android:textStyle="bold"
+            android:textColor="#fff92b"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnMA_Close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="@drawable/btn_button"
+            android:text="Close"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnMA_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_button"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMA_OK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_button"
+            android:text="OK"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

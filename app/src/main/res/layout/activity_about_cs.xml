@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_theme"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_app_theme"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/aboutcs_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_vac_app_logo" />
+
+                <ImageView
+                    android:id="@+id/aboutMSS_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Application Version"
+                    android:textColor="@color/labelColorAbout"
+                    android:textSize="@dimen/labelFontSizeAbout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:text="@string/app_version"
+                    android:textColor="@color/HeadColorAbout"
+                    android:textSize="@dimen/HeadFontSizeAbout"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:layout_marginTop="15dp"
+                    android:text="Contact Email ID"
+                    android:textColor="@color/labelColorAbout"
+                    android:textSize="@dimen/labelFontSizeAbout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:text="cssoftwaretechnology@gmail.com"
+                    android:textColor="@color/HeadColorAbout"
+                    android:textSize="@dimen/HeadFontSizeAbout"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:layout_marginTop="15dp"
+                    android:text="Web Site"
+                    android:textColor="@color/labelColorAbout"
+                    android:textSize="@dimen/labelFontSizeAbout" />
+
+                <TextView
+                    android:id="@+id/aboutcs_webaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:text="www.cssoftwaretech.com"
+                    android:textColor="@color/HeadColorAbout"
+                    android:textSize="@dimen/HeadFontSizeAbout"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:layout_marginTop="15dp"
+                    android:text="Web Site for this Application"
+                    android:textColor="@color/labelColorAbout"
+                    android:textSize="@dimen/labelFontSizeAbout" />
+
+                <TextView
+                    android:id="@+id/aboutcs_webaddressSMM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLabelAbout"
+                    android:text="www.cssoftwaretech.com/smm"
+                    android:textColor="@color/HeadColorAbout"
+                    android:textSize="@dimen/HeadFontSizeAbout"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#4d4e4e"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/aboutcs_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/sic_facebook_icon" />
+
+                <ImageView
+                    android:id="@+id/aboutcs_webSite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/cs_web_site" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutcs_SMMproApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#343536"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Go To Pro Application"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/itemviewTitleFnSize"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/bg_img_round"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Ad Free"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_smm_pro" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/bg_img_round"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Full Control"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Only 2.7$"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/itemviewTitleFnSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

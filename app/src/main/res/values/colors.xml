@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#900c3e</color>
+    <color name="colorPrimaryDark">#c70039</color>
+    <color name="colorAccent">#44beff</color>
+    <color name="textTitleColor">#002f4b</color>
+    <color name="textColorEditText">#2c2439</color>
+    <color name="textColorSmall">#aeaeae</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="buttonNormalColor">#5e3b4474</color>
+    <color name="buttonOnclickColor">#35334e</color>
+    <color name="shadowColorEnd">#40000000</color>
+    <color name="shadowColorStart">#00000000</color>
+    <color name="cc_listTitleColor">#ffffff</color>
+    <color name="cc_listSubTitleColor">#babac1</color>
+    <color name="cc_listButtonDarkColor">#2d3047</color>
+    <color name="cc_listButtonLightColor">#c72d3047</color>
+    <color name="ic_iconColor">#ffffff</color>
+    <color name="labelColorAbout">#bd878787</color>
+    <color name="HeadColorAbout">#101538</color>
+    <color name="test">#04564c</color>
+    <color name="fabAddButtonColor">#ff69a2</color>
+    <color name="itemview_TextViewColor">#162151</color>
+    <color name="itemview_optionColor">#00da8a</color>
+    <color name="statusBar_TextColor">#505050</color>
+    <color name="itemview_SubTextViewColor">#8a899b</color>
+    <color name="frame_bg_color_photo">#dcdcdc</color>
+    <color name="textMessageColor">#000000</color>
+
+</resources>

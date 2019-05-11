@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Schedule My Messages</string>
+    <string name="app_version">2.1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Schedule My Message</string>
+    <string name="nav_header_subtitle">cssoftwaretech.com/smm</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="auto_message_send_name">Automatic Send</string>
+</resources>

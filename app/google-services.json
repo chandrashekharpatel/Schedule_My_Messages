@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "889237434149",
+    "firebase_url": "https://smm-schedule-my-messages.firebaseio.com",
+    "project_id": "smm-schedule-my-messages",
+    "storage_bucket": "smm-schedule-my-messages.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889237434149:android:8722452986974be0",
+        "android_client_info": {
+          "package_name": "com.cssoftwaretech.smm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889237434149-1tmiqr70rl2mgu2lvjfgim7bep2rk048.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cssoftwaretech.smm",
+            "certificate_hash": "571ecdef15fb7af852598c39d21575e8d417e7b7"
+          }
+        },
+        {
+          "client_id": "889237434149-7jk4tel804gcskac29uaacjfoepmkgpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cssoftwaretech.smm",
+            "certificate_hash": "40ff8494174071016d1d3dd1161c494db44cf996"
+          }
+        },
+        {
+          "client_id": "889237434149-tkpc3m81gclher0b2mcpncr58i7lo3rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHLqCvO5k2gpeQG9qxEPBY-y1LIoZFMzQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889237434149-tkpc3m81gclher0b2mcpncr58i7lo3rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

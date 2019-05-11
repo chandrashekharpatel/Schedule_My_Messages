@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_theme"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Format" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/settings_sw_clockType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/bg_option"
+                    android:padding="5dp"
+                    android:text="Use 24-hour format"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/settingsTextFontSize" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Send" />
+
+            <Switch
+                android:id="@+id/settings_sw_smsAlwaysON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_option"
+                android:padding="5dp"
+                android:text="Always on"
+                android:textColor="@color/textTitleColor"
+                android:textSize="@dimen/settingsTextFontSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Default" />
+
+            <Switch
+                android:id="@+id/settings_sw_currentDateTimeSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_option"
+                android:padding="5dp"
+                android:text="Current Date and Time"
+                android:textColor="@color/textTitleColor"
+                android:textSize="@dimen/settingsTextFontSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Home Page" />
+
+            <Switch
+                android:id="@+id/settings_sw_showMessageOnScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_option"
+                android:padding="5dp"
+                android:text="Messages in Front"
+                android:textColor="@color/textTitleColor"
+                android:textSize="@dimen/settingsTextFontSize" />
+
+            <ImageView
+                android:id="@+id/settings_iv_showMessageOnScreen"
+                android:layout_width="match_parent"
+                android:layout_height="95dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Send Duration" />
+
+            <Switch
+                android:id="@+id/settings_sw_showRemainingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_option"
+                android:padding="5dp"
+                android:text="Remaining Time"
+                android:textColor="@color/textTitleColor"
+                android:textSize="@dimen/settingsTextFontSize" />
+
+            <ImageView
+                android:id="@+id/settings_iv_showRemainingTime"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Delivered Reporting" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/settings_rg_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_option">
+
+                    <RadioButton
+                        android:id="@+id/settings_rb_reportOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="Report Off" />
+
+                    <RadioButton
+                        android:id="@+id/settings_rb_reportOnly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="Report Only" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Some Telecom service provider dose take charge on SMS delivery report. Hence, if you do not want this feature in Auto SMS sender, you can turn it off from here." />
+
+                    <RadioButton
+                        android:id="@+id/settings_rb_reportPlusNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Report + Notification" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="When on, it shows notification on the top of the screen (Status bar) to alert you about the status of the last sent SMS" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:id="@+id/settings_ll_pref_SIM_for_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_weight="2.5"
+                        android:paddingLeft="5dp"
+                        android:text="Preferred SIM for SMS messages"
+                        android:textSize="@dimen/textFontSizeSmall" />
+
+                    <RadioGroup
+                        android:id="@+id/settings_rg_PreferredSIMforSMS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_option"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/settings_rb_PreferredSIM_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="SIM 1" />
+
+                        <RadioButton
+                            android:id="@+id/settings_rb_PreferredSIM_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="SIM 2" />
+
+                        <RadioButton
+                            android:id="@+id/settings_rb_PreferredSIM_default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="Default" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
